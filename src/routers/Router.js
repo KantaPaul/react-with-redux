@@ -5,6 +5,7 @@ import About from '../Components/About';
 import Contact from '../Components/Contact';
 import Help from '../Components/Help';
 import NotFound from '../Components/NotFound';
+import AddExpensePage from '../Components/AddExpense';
 import {BrowserRouter , Route, Switch, Link, NavLink  } from 'react-router-dom';
 
 let HeaderTitle = () => (
@@ -14,6 +15,9 @@ let HeaderTitle = () => (
         <ul className="navbar-nav">
           <li className="nav-item">
             <NavLink className="nav-link" exact={true} to="/">Home</NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink className="nav-link" to="/addexpense">Add Expense </NavLink>
           </li>
           <li className="nav-item">
             <NavLink className="nav-link" to="/about">About</NavLink>
@@ -36,6 +40,7 @@ let Routes = () => (
         <HeaderTitle />
         <Switch>
           <Route path="/" component={ExpenseDashboradpage} exact={true}/>
+          <Route path="/addexpense" component={AddExpensePage} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/help" component={Help} />

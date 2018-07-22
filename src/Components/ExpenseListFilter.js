@@ -19,7 +19,6 @@ let ExpenseListFilters = (props) => (
         }
       }}
     >
-      <option selected>Select Value</option>
       <option value="date">Date</option>
       <option value="amount">Amount</option>
     </select>
