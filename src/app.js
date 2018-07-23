@@ -11,9 +11,9 @@ import Routes from './routers/Router';
 
 let store = configureStore();
 
-store.dispatch(addexpense({description: 'Water Bill', amount: 700, createdAt: 2017}))
-store.dispatch(addexpense({description: 'Gas Bill', amount: 500, createdAt: 2018}))
-store.dispatch(addexpense({description: 'Rent Bill', amount: 1000, createdAt: 2015}))
+store.dispatch(addexpense({description: 'Water Bill', amount: 700, createdAt: 2017, note: 'Hello'}))
+store.dispatch(addexpense({description: 'Gas Bill', amount: 500, createdAt: 2018, note: 'Hi I am note'}))
+store.dispatch(addexpense({description: 'Rent Bill', amount: 1000, createdAt: 2015, note: 'Note is here'}))
 
 
 let state = store.getState();

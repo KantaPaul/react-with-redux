@@ -1,9 +1,11 @@
+import moment from 'moment';
+
 // filter reducers
 let filterReducersDefaultState = {
   text: '',
   sortBy: 'amount',
-  startDate: undefined,
-  endDate: undefined
+  startDate: moment().startOf('month'),
+  endDate: moment().endOf('month')
 }
 
 export default (state = filterReducersDefaultState, action) => {

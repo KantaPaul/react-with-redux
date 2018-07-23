@@ -6,6 +6,7 @@ import Contact from '../Components/Contact';
 import Help from '../Components/Help';
 import NotFound from '../Components/NotFound';
 import AddExpensePage from '../Components/AddExpense';
+import EditExpensePage from '../Components/EditExpensePage';
 import {BrowserRouter , Route, Switch, Link, NavLink  } from 'react-router-dom';
 
 let HeaderTitle = () => (
@@ -44,6 +45,7 @@ let Routes = () => (
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <Route path="/help" component={Help} />
+          <Route path="/edit/:id" component={EditExpensePage} />
           <Route component={NotFound} />
         </Switch>
       </div>

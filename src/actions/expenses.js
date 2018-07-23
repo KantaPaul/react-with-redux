@@ -8,7 +8,8 @@ export let addexpense = (
     amount = '', 
     license = '', 
     description= '',
-    createdAt = 0
+    createdAt = 0,
+    note = ''
   }) => ({
   type: 'ADD_EXPENSE',
   expenses: {
@@ -18,7 +19,8 @@ export let addexpense = (
     amount,
     license,
     description,
-    createdAt
+    createdAt,
+    note
   }
 })
 
